@@ -56,12 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Using the local media files directly
     const mediaFiles = [
-        { type: 'image', src: 'WhatsApp Image 2026-06-03 at 7.34.55 AM.jpeg' },
-        { type: 'video', src: 'WhatsApp Video 2026-06-03 at 7.34.56 AM.mp4' },
-        { type: 'video', src: 'WhatsApp Video 2026-06-03 at 7.34.57 AM.mp4' },
-        { type: 'video', src: 'WhatsApp Video 2026-06-03 at 7.35.01 AM.mp4' },
-        { type: 'video', src: 'WhatsApp Video 2026-06-03 at 7.35.06 AM.mp4' },
-        { type: 'video', src: 'WhatsApp Video 2026-06-03 at 7.38.27 AM.mp4' }
+        { type: 'image', src: 'assets/WhatsApp Image 2026-06-03 at 7.34.55 AM.jpeg' },
+        { type: 'video', src: 'assets/WhatsApp Video 2026-06-03 at 7.34.56 AM.mp4' },
+        { type: 'video', src: 'assets/WhatsApp Video 2026-06-03 at 7.34.57 AM.mp4' },
+        { type: 'video', src: 'assets/WhatsApp Video 2026-06-03 at 7.35.01 AM.mp4' },
+        { type: 'video', src: 'assets/WhatsApp Video 2026-06-03 at 7.35.06 AM.mp4' },
+        { type: 'video', src: 'assets/WhatsApp Video 2026-06-03 at 7.38.27 AM.mp4' }
     ];
 
     // Replay
