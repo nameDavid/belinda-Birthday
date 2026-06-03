@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 27th Birthday Belinda!</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Phase 1: Verification -->
+        <section id="phase-1" class="phase active">
+            <div class="glass-card">
+                <h1>Who is this?</h1>
+                <p>Enter the birthday girl's name to unlock the surprise.</p>
+                <input type="text" id="name-input" placeholder="Your Name" autocomplete="off" />
+                <button id="verify-btn">Unlock</button>
+                <p id="error-msg" class="hidden">Access Denied! Try again.</p>
+            </div>
+        </section>
+
+        <!-- Phase 2: Game (27 Balloons) -->
+        <section id="phase-2" class="phase hidden">
+            <div class="glass-card full-height">
+                <h2>Level 2: The 27 Balloons</h2>
+                <p>Pop 27 balloons before time runs out! <br>Balloons popped: <span id="pop-count">0</span> / 27 <br>Time Left: <span id="time-left">30</span>s</p>
+                <div id="balloon-container"></div>
+                <button id="retry-btn" class="hidden glow-button" style="margin-top: 15px;">Retry Game 🔄</button>
+            </div>
+        </section>
+
+        <!-- Phase 3: Gallery -->
+        <section id="phase-3" class="phase hidden">
+            <div class="glass-card gallery-card">
+                <h2>A Walk Down Memory Lane...</h2>
+                <p>Enjoy these moments. Click to view!</p>
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Media inserted by JS -->
+                </div>
+                <button id="next-to-final-btn" class="hidden glow-button" style="margin-top: 20px;">See Your Final Surprise 🎁</button>
+            </div>
+        </section>
+
+        <!-- Phase 4: Final Message -->
+        <section id="phase-4" class="phase hidden">
+            <div class="glass-card final-card">
+                <h1 class="gradient-text">Happy 27th Birthday, Belinda! 🎉</h1>
+                <div class="heartfelt-message">
+                    <p>To my dearest friend,</p>
+                    <p>Wishing you the happiest of birthdays today! May 27 bring you boundless joy, success, and love.</p>
+                    <p>You light up the room wherever you go, and I'm so grateful for all the amazing memories we've shared.</p>
+                    <p>Here's to celebrating you today and creating even more wonderful memories in the year ahead!</p>
+                    <p class="signature">With so much love!</p>
+                </div>
+                <button id="replay-btn">Replay Memories</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
