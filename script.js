@@ -1,4 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Audio Controls
+    const bgMusic = document.getElementById('bg-music');
+    const muteBtn = document.getElementById('mute-btn');
+    let isMuted = false;
+
+    // Play music immediately
+    bgMusic.play().catch(e => console.log('Autoplay prevented by browser:', e));
+
+    muteBtn.addEventListener('click', () => {
+        isMuted = !isMuted;
+        if (isMuted) {
+            bgMusic.pause();
+            muteBtn.classList.add('muted');
+        } else {
+            bgMusic.play();
+            muteBtn.classList.remove('muted');
+        }
+    });
+
+    // Fallback: Start music on first user interaction if autoplay was blocked
+    function resumeMusic() {
+        if (bgMusic.paused) {
+            bgMusic.play().catch(e => console.log('Play failed:', e));
+        }
+    }
+    document.addEventListener('click', resumeMusic, { once: true });
+    document.addEventListener('keypress', resumeMusic, { once: true });
+
     // Phases
     const phase1 = document.getElementById('phase-1');
     const phase2 = document.getElementById('phase-2');

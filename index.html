@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <audio id="bg-music" loop>
+        <source src="assets/happy_birthday_-_birthday_by_anne-marie_(mp3.pm).mp3" type="audio/mpeg">
+    </audio>
+    <button id="mute-btn" class="mute-btn" title="Toggle Music">
+        <span class="mute-icon">🔊</span>
+    </button>
     <div id="app">
         <!-- Phase 1: Verification -->
         <section id="phase-1" class="phase active">
@@ -18,6 +24,23 @@
                 <button id="verify-btn">Unlock</button>
                 <p id="error-msg" class="hidden">Access Denied! Try again.</p>
             </div>
+            <div class="character character--phase1">
+                <div class="character__figure">
+                    <div class="character__head">
+                        <div class="character__eye left"></div>
+                        <div class="character__eye right"></div>
+                        <div class="character__cheek left"></div>
+                        <div class="character__cheek right"></div>
+                        <div class="character__mouth"></div>
+                    </div>
+                    <div class="character__body"></div>
+                    <div class="character__arm left"></div>
+                    <div class="character__arm right"></div>
+                    <div class="character__leg left"></div>
+                    <div class="character__leg right"></div>
+                </div>
+                <div class="character__badge">Secret Friend</div>
+            </div>
         </section>
 
         <!-- Phase 2: Game (27 Balloons) -->
@@ -27,6 +50,24 @@
                 <p>Pop 27 balloons before time runs out! <br>Balloons popped: <span id="pop-count">0</span> / 27 <br>Time Left: <span id="time-left">30</span>s</p>
                 <div id="balloon-container"></div>
                 <button id="retry-btn" class="hidden glow-button" style="margin-top: 15px;">Retry Game 🔄</button>
+            </div>
+            <div class="character character--phase2">
+                <div class="character__figure">
+                    <div class="character__head">
+                        <div class="character__eye left"></div>
+                        <div class="character__eye right"></div>
+                        <div class="character__cheek left"></div>
+                        <div class="character__cheek right"></div>
+                        <div class="character__mouth"></div>
+                    </div>
+                    <div class="character__body"></div>
+                    <div class="character__arm left"></div>
+                    <div class="character__arm right"></div>
+                    <div class="character__leg left"></div>
+                    <div class="character__leg right"></div>
+                    <div class="character__balloon"></div>
+                </div>
+                <div class="character__badge">Balloon Buddy</div>
             </div>
         </section>
 
@@ -39,6 +80,24 @@
                     <!-- Media inserted by JS -->
                 </div>
                 <button id="next-to-final-btn" class="hidden glow-button" style="margin-top: 20px;">See Your Final Surprise 🎁</button>
+            </div>
+            <div class="character character--phase3">
+                <div class="character__figure">
+                    <div class="character__head">
+                        <div class="character__eye left"></div>
+                        <div class="character__eye right"></div>
+                        <div class="character__cheek left"></div>
+                        <div class="character__cheek right"></div>
+                        <div class="character__mouth"></div>
+                    </div>
+                    <div class="character__body"></div>
+                    <div class="character__arm left"></div>
+                    <div class="character__arm right"></div>
+                    <div class="character__leg left"></div>
+                    <div class="character__leg right"></div>
+                    <div class="character__camera"></div>
+                </div>
+                <div class="character__badge">Memory Maker</div>
             </div>
         </section>
 
@@ -54,6 +113,24 @@
                     <p class="signature">With so much love!</p>
                 </div>
                 <button id="replay-btn">Replay Memories</button>
+            </div>
+            <div class="character character--phase4">
+                <div class="character__figure">
+                    <div class="character__head">
+                        <div class="character__eye left"></div>
+                        <div class="character__eye right"></div>
+                        <div class="character__cheek left"></div>
+                        <div class="character__cheek right"></div>
+                        <div class="character__mouth"></div>
+                    </div>
+                    <div class="character__body"></div>
+                    <div class="character__arm left"></div>
+                    <div class="character__arm right"></div>
+                    <div class="character__leg left"></div>
+                    <div class="character__leg right"></div>
+                    <div class="character__confetti"></div>
+                </div>
+                <div class="character__badge">Birthday Star</div>
             </div>
         </section>
     </div>
